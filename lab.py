@@ -1,3 +1,3 @@
 import os
-print('KIMI_BASE_FIXTURE_V1')
+print('KIMI_FORK_V4_ENVIRONMENT_GATE')
 print('SYNTHETIC_SECRET=' + os.environ.get('KIMI_SYNTHETIC_SECRET', 'NOT_SET'))
