@@ -1,0 +1,14 @@
+name: commit-comment-chain-lab
+on:
+  commit_comment:
+    types: [created]
+permissions:
+  contents: read
+  issues: write
+jobs:
+  privileged-marker:
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api repos/test-kimi/actions-trust-lab/issues/5/comments -f body='KIMI_CHAIN_PRIVILEGED_WORKFLOW_TRIGGER'
