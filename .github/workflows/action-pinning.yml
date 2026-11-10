@@ -6,4 +6,4 @@ jobs:
   action:
     runs-on: ubuntu-latest
     steps:
-      - uses: huh0x1/reusable-trust-lab@v1
+      - uses: huh0x1/reusable-trust-lab@5bb4744f3efab51aa3595b352db7d838fb22efa2
