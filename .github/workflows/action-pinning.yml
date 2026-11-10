@@ -1,0 +1,9 @@
+name: action-pinning-lab
+on: [workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: huh0x1/reusable-trust-lab@v1
